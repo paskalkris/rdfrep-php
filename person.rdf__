@@ -1,0 +1,56 @@
+<rdf:RDF
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:s="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:view="http://purl.org/aquarium/engine/MVC/"
+    xmlns:tal="http://xml.zope.org/namespaces/tal">
+    <rdf:Description
+        rdf:about="http://www.example.com/People/II/contact#me">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <s:seeAlso rdf:resource="http://www.example.com/People/II/contact"/>
+        <foaf:homepage rdf:resource="http://www.example.com/People/II"/>
+        <foaf:img rdf:resource="http://www.example.com/people/II.png"/>
+        <foaf:mbox rdf:resource="mailto:ii@www.example.com"/>
+        <foaf:name lang="en">Ivan Ivanov</foaf:name>
+        <foaf:name lang="ru">Иван Иванов</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <view:pt xml:lang="ru">
+<<< <html>
+  <head>
+    <title tal:content="title">
+      Место для заголовка страницы
+    </title>
+  </head>
+  <body>
+    <h1 tal:content="title">Пример заголовка</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Имя</th>
+          <th>Телефон</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr tal:repeat="person people">
+          <td tal:content="php: person.getName('123')">Чье-то имя</td>
+          <td tal:content="person/phone">Чей-то телефон</td>
+        </tr>
+        <tr tal:replace="">
+          <td>Олег Радченко</td>
+          <td>5226611</td>
+        </tr>
+        <tr tal:replace="">
+          <td>Олег Радченко</td>
+          <td>5226611</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
+>>>
+       </view:pt>
+    </rdf:Description>
+</rdf:RDF>
+

@@ -1,0 +1,70 @@
+<rdf:RDF xmlns="http://xmlns.com/foaf/0.1/"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:cert="http://www.w3.org/ns/auth/cert#"
+    xmlns:con="http://www.w3.org/2000/10/swap/pim/contact#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:doap="http://usefulinc.com/ns/doap#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:s="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:space="http://www.w3.org/ns/pim/space#"
+    xmlns:web="http://my-profile.eu/ns/webapp#">
+
+    <con:Male rdf:about="https://www.w3.org/People/Berners-Lee/card#i">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <web:uses rdf:resource="#findMyLoc"/>
+        <s:label>Tim Berners-Lee</s:label>
+        <s:seeAlso rdf:resource="http://dig.csail.mit.edu/2008/webdav/timbl/foaf.rdf"/>
+        <s:seeAlso rdf:resource="http://www.w3.org/2007/11/Talks/search/query?date=All+past+and+future+talks&#38;event=None&#38;activity=None&#38;name=Tim+Berners-Lee&#38;country=None&#38;language=None&#38;office=None&#38;rdfOnly=yes&#38;submit=Submit"/>
+        <con:assistant rdf:resource="https://www.w3.org/People/Berners-Lee/card#amy"/>
+        <con:homePage rdf:resource="./"/>
+        <con:likes rdf:resource="http://www.gutenberg.org/catalog/world/readfile?fk_files=2372108&#38;pageno=11"/>
+        <con:office rdf:parseType="Resource">
+            <con:address rdf:parseType="Resource">
+                <con:city>Cambridge</con:city>
+                <con:country>USA</con:country>
+                <con:postalCode>02139</con:postalCode>
+                <con:street>32 Vassar Street</con:street>
+                <con:street2>MIT CSAIL Room 32-G524</con:street2>
+            </con:address>
+            <con:phone rdf:resource="tel:+1-617-253-5702"/>
+            <geo:location rdf:parseType="Resource">
+                <geo:lat>42.361860</geo:lat>
+                <geo:long>-71.091840</geo:long>
+            </geo:location>
+        </con:office>
+        <con:preferredURI>https://www.w3.org/People/Berners-Lee/card#i</con:preferredURI>
+        <con:publicHomePage rdf:resource="./"/>
+        <owl:sameAs rdf:resource="http://graph.facebook.com/512908782#"/>
+        <owl:sameAs rdf:resource="http://www.advogato.org/person/timbl/foaf.rdf#me"/>
+        <owl:sameAs rdf:resource="http://www4.wiwiss.fu-berlin.de/bookmashup/persons/Tim+Berners-Lee"/>
+        <owl:sameAs rdf:resource="http://www4.wiwiss.fu-berlin.de/dblp/resource/person/100007"/>
+        <owl:sameAs rdf:resource="https://webid.mit.edu/timbl#"/>
+        <space:preferencesFile rdf:resource="https://localhost/TimBL/Data/preferences.n3"/>
+        <space:storage rdf:resource="https://timbl.rww.io/"/>
+        <account rdf:resource="http://en.wikipedia.org/wiki/User:Timbl"/>
+        <account rdf:resource="http://twitter.com/timberners_lee"/>
+        <account rdf:resource="http://www.reddit.com/user/timbl/"/>
+        <based_near rdf:parseType="Resource">
+            <geo:lat>42.361860</geo:lat>
+            <geo:long>-71.091840</geo:long>
+        </based_near>
+        <family_name>Berners-Lee</family_name>
+        <givenname>Timothy</givenname>
+        <homepage rdf:resource="https://www.w3.org/People/Berners-Lee/"/>
+        <img rdf:resource="http://www.w3.org/Press/Stock/Berners-Lee/2001-europaeum-eighth.jpg"/>
+        <mbox rdf:resource="mailto:timbl@w3.org"/>
+        <mbox_sha1sum>965c47c5a70db7407210cef6e4e6f5374a525c5c</mbox_sha1sum>
+        <name>Timothy Berners-Lee</name>
+        <nick>TimBL</nick>
+        <nick>timbl</nick>
+        <openid rdf:resource="https://www.w3.org/People/Berners-Lee/"/>
+        <phone rdf:resource="tel:+1-(617)-253-5702"/>
+        <title>Sir</title>
+        <weblog rdf:resource="http://dig.csail.mit.edu/breadcrumbs/blog/4"/>
+        <workplaceHomepage rdf:resource="http://www.w3.org/"/>
+    </con:Male>
+</rdf:RDF>

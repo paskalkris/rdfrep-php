@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html><head>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<meta http-equiv="Content-Type" 
+ content="text/html; charset=utf-8"/>
+<title>Простой текстовый редактор на JS</title>
+<script type="text/javascript" src="jseditor/blockeditor.js" charset="utf-8"></script>
+</head>
+<body bgcolor="#EEEEEE" text="#111111">
+
+<form name="f1" action="" method="post" enctype="multipart/form-data">
+
+ <table border="0" align="center">
+ <tr><td>
+  <script type="text/javascript" charset="utf-8">
+   showIcons (); 
+  </script>
+  <br />
+  <span id="helpbox" style="width:450px; font-size:10px" 
+   class="small">Можно быстро применить стили к выделенному тексту</span>
+  </td></tr>
+  <tr><td>
+   <span tal:define="global tmpl"/>
+   <textarea id="wisiwig_textarea" tal:content="tmpl" name="text" class="button" rows="10" cols="72" 
+   onselect="storeCaret(this);" onclick="storeCaret(this);" 
+   onkeyup="storeCaret(this);">12<b>3234</b></textarea>
+  </td></tr>
+  <tr><td>
+   <input type="submit" class="button" value="Отправить" 
+    onclick="bbstyle(-1); return checkblock();"/>
+  </td></tr>
+ </table>
+</form>
+
+</body></html>

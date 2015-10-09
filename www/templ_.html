@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title tal:content="title">
+      Место для заголовка страницы
+    </title>
+  </head>
+  <body>
+    <h1 tal:content="title">Пример заголовка</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Имя</th>
+          <th>Телефон</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr tal:repeat="person people">
+          <td tal:content="person/name">Чье-то имя</td>
+          <td tal:content="person/phone">Чей-то телефон</td>
+        </tr>
+        <tr tal:replace="">
+          <td>Олег Радченко</td>
+          <td>5226611</td>
+        </tr>
+        <tr tal:replace="">
+          <td>Олег Радченко</td>
+          <td>5226611</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
